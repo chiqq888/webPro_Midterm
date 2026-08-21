@@ -1,0 +1,25 @@
+body {
+    font-family: "IBM Plex Sans Thai Looped", sans-serif;
+    margin: 50px;
+}
+
+#header h1 {
+    font-size: 24px;
+}
+
+#header p {
+    font-size: 16px;
+}
+
+#header {
+    text-align: center;
+}
+
+#labelfrom {
+    text-align: center;
+}
+
+#labelfrom button {
+    width: 60px;
+    height: 20px;
+}
