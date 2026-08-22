@@ -19,7 +19,20 @@ body {
     text-align: center;
 }
 
-#labelfrom button {
-    width: 60px;
-    height: 20px;
+/* 1. สั่งกล่องแม่ให้จับลูกๆ เรียงแถวหน้ากระดานบรรทัดเดียวกัน */
+#labelfrom {
+  display: flex;
+  flex-direction: row; /* บังคับให้อยู่บรรทัดเดียวกัน (แนวนอน) */
+  justify-content: center; /* ดันให้อยู่ตรงกลางหน้าจอ */
+  align-items: center; /* บังคับให้ขอบบน-ล่างของทุกกล่องเสมอกันเป๊ะ */
+  gap: 10px; /* ระยะห่างระหว่างกล่อง จะได้ไม่เบียดกันเกินไป */
+}
+
+/* 2. กำหนดขนาดของ Input, Select และ Button ให้เท่ากัน */
+#labelfrom input, select, button {
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  width: 200px;
+  height: 30px;
+  box-sizing: border-box; /* สำคัญมาก: ป้องกันไม่ให้เส้นขอบมาทำให้ขนาดกล่องเพี้ยน */
+  margin: 0; /* ลบ margin ที่เบราว์เซอร์อาจจะแอบแถมมาให้ออกไป */
 }
