@@ -28,8 +28,11 @@ const updatedUsers = users.map((users) => {
 console.log(updatedUsers)
 
 function randomDiscount() {
-    const randomNum = Math.floor(Math.random()*40) + 10;
+    const randomNum = Math.floor(Math.random()*41) + 10;
     console.log(randomNum);
 }
 
 randomDiscount();
+
+const inputName = document.getElementById('input');
+const inputSelect = document.getElementById('select')
