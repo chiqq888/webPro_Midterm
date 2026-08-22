@@ -28,7 +28,7 @@ const updatedUsers = users.map((users) => {
 console.log(updatedUsers)
 
 function randomDiscount() {
-    const randomNum = Math.floor(Math.random()*50) + 10;
+    const randomNum = Math.floor(Math.random()*40) + 10;
     console.log(randomNum);
 }
 
