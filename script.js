@@ -26,7 +26,6 @@ const updatedUsers = users.map((users) => {
 })
 
 console.log(updatedUsers)
-
 function randomDiscount() {
     const randomNum = Math.floor(Math.random()*41) + 10;
     console.log(randomNum);
@@ -34,5 +33,27 @@ function randomDiscount() {
 
 randomDiscount();
 
-const inputName = document.getElementById('input');
-const inputSelect = document.getElementById('select')
+// const getFName = document.getElementById('inputFName');
+// getFName.addEventListener('input', function(event) {
+//     const FName = event.target.value;
+//     console.log('Your First Name : ' + FName);
+
+// })
+
+// const getLName = document.getElementById('inputLName');
+// getLName.addEventListener('input', function(event) {
+//     const LName = event.target.value;
+//     console.log('Your Last Name : ' + LName);
+
+// })
+
+const labelform = document.getElementById('labelfrom')
+labelform.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const FName = document.getElementById('inputFName').value;
+    const LName = document.getElementById('inputLName').value;
+
+    console.log('Your First Name : ' + FName);
+    console.log('Your Last Name : ' + LName);
+})
