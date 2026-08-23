@@ -28,10 +28,8 @@ const updatedUsers = users.map((users) => {
 console.log(updatedUsers)
 function randomDiscount() {
     const randomNum = Math.floor(Math.random()*41) + 10;
-    console.log(randomNum);
+    return randomNum;
 }
-
-randomDiscount();
 
 // const getFName = document.getElementById('inputFName');
 // getFName.addEventListener('input', function(event) {
@@ -50,10 +48,17 @@ randomDiscount();
 const labelform = document.getElementById('labelfrom')
 labelform.addEventListener('submit', function(event) {
     event.preventDefault();
+    const disCount = randomDiscount();
 
     const FName = document.getElementById('inputFName').value;
     const LName = document.getElementById('inputLName').value;
+    const YSelect = document.getElementById('select').value;
+
+    const resultArea = document.getElementById('innerText');
+    resultArea.innerHTML = `<h3>Your Name : </h3> ${FName} ${LName} <h3>Your Old : </h3> ${YSelect} <h3>Your Discount : </h3> ${disCount}`;
 
     console.log('Your First Name : ' + FName);
     console.log('Your Last Name : ' + LName);
-})
+    console.log('Your Old range : ' + YSelect);
+    console.log('Your Discount : ' + disCount);
+});

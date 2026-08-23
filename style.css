@@ -36,3 +36,15 @@ body {
   box-sizing: border-box; /* สำคัญมาก: ป้องกันไม่ให้เส้นขอบมาทำให้ขนาดกล่องเพี้ยน */
   margin: 0; /* ลบ margin ที่เบราว์เซอร์อาจจะแอบแถมมาให้ออกไป */
 }
+
+#resultArea {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    text-align: center;
+}
+
+#resultArea .innerText {
+}
